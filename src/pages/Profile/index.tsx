@@ -22,13 +22,13 @@ const Profile: FC = () => {
 				<div className={styles.settings}>
 					<BiDotsVerticalRounded style={{ fontSize: '20px' }} />
 
-					{/* <div className={styles.menu}>
+					<div className={styles.menu}>
 						<div className={styles.item}>Item</div>
 						<div className={styles.item}>Item</div>
 						<div className={styles.item}>Item</div>
 						<div className={styles.item}>Item</div>
 						<div className={styles.item}>Item</div>
-					</div> */}
+					</div>
 				</div>
 			</div>
 			<ViewProfile style={{ margin: '70px auto' }} />
