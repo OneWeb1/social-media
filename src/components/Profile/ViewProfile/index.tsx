@@ -10,13 +10,13 @@ const ViewProfile: FC<ViewProfileProps> = ({ style }) => {
 	return (
 		<div style={style} className={styles.viewProfile}>
 			<div className={styles.forground}>
-				<img src='./public/assets/head.png' alt='head' />
+				<img src='./assets/head.png' alt='head' />
 			</div>
 
 			<div className={styles.avatarWrapper}>
 				<div className={styles.avatarBox}>
 					<div className={styles.avatar}>
-						<img src='./public/assets/avatar.png' alt='avatar' />
+						<img src='./assets/avatar.png' alt='avatar' />
 					</div>
 				</div>
 				<div className={styles.username}>Vladyslav Kovalevych</div>
