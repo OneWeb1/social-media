@@ -14,20 +14,20 @@ const Profile: FC = () => {
 				<div className={styles.leftSide}>
 					<Link to='/'>
 						<div className={styles.back}>
-							<IoArrowBackOutline style={{ fontSize: '20px' }} />
+							<IoArrowBackOutline style={{ fontSize: '25px' }} />
 						</div>
 					</Link>
 					Profile
 				</div>
 				<div className={styles.settings}>
-					<BiDotsVerticalRounded style={{ fontSize: '20px' }} />
+					<BiDotsVerticalRounded style={{ fontSize: '25px' }} />
 
 					<div className={styles.menu}>
-						<div className={styles.item}>Item</div>
-						<div className={styles.item}>Item</div>
-						<div className={styles.item}>Item</div>
-						<div className={styles.item}>Item</div>
-						<div className={styles.item}>Item</div>
+						<div className={styles.item}>Settings</div>
+						<div className={styles.item}>Replace</div>
+						<div className={styles.item}>Edit</div>
+						<div className={styles.item}>Vote</div>
+						<div className={styles.item}>More</div>
 					</div>
 				</div>
 			</div>

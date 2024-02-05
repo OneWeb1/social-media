@@ -1,0 +1,32 @@
+.viewNotFound {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.viewWrapper {
+		max-width: 500px;
+		min-height: 200px;
+		text-align: center;
+
+		h1 {
+			margin-bottom: 30px;
+		}
+
+		.navLink {
+			width: 350px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: rgba(0, 0, 0, 0.06);
+			border-radius: 8px;
+			margin-bottom: 10px;
+
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.15);
+			}
+		}
+	}
+}
