@@ -1,11 +1,15 @@
-import { FC } from 'react';
+import { CSSProperties, FC } from 'react';
 
 import styles from './ViewInfoList.module.scss';
 import ViewHeader from '../../mini/ViewHeader';
 
-const ViewInfoList: FC = () => {
+interface ViewInfoListProps {
+	style?: CSSProperties;
+}
+
+const ViewInfoList: FC<ViewInfoListProps> = ({ style }) => {
 	return (
-		<div className={styles.viewInfoList}>
+		<div style={style} className={styles.viewInfoList}>
 			<div className={styles.viewRow}>
 				<ViewHeader>Groups</ViewHeader>
 				<div className={styles.rowItem}>
