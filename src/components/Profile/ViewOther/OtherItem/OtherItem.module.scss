@@ -1,0 +1,21 @@
+.viewItem {
+	min-height: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+	border-radius: 10px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.05);
+	}
+
+	.icon {
+		margin-right: 5px;
+	}
+
+	.text {
+		font-size: 12px;
+	}
+}

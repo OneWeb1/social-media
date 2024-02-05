@@ -1,0 +1,156 @@
+.viewRightSidebarWrapper {
+	position: fixed;
+	width: 100vw;
+	min-height: 100vh;
+	z-index: 1000;
+	top: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.1);
+
+	.viewRightSidebar {
+		position: absolute;
+		width: 350px;
+		height: 100%;
+		top: 0;
+		right: 0;
+		z-index: 100000;
+		box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+		background-color: rgb(255, 255, 255);
+		transition: 0.5s;
+		padding: 20px;
+		padding-top: 0;
+		overflow-y: scroll;
+
+		.row {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 10px 0;
+		}
+
+		.logo {
+		}
+
+		.close {
+			width: 30px;
+			height: 30px;
+			background-color: rgba(0, 0, 0, 0.07);
+			border-radius: 8px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.12);
+			}
+		}
+
+		.leftSide {
+			padding: 15px 0px;
+			padding-top: 5px;
+
+			.navBox {
+				min-width: 30px;
+				width: 30px;
+				height: 30px;
+				background-color: #3456ffbf;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 100px;
+				margin-right: 10px;
+				margin-bottom: 5px;
+				cursor: pointer;
+				transition: 0.2s;
+				overflow: hidden;
+
+				&:hover {
+					background-color: #3456ff;
+					filter: brightness(0.95);
+				}
+
+				&:last-child {
+					margin-right: 20px;
+					margin-bottom: 0;
+				}
+
+				svg {
+					border-radius: 50px;
+				}
+
+				img {
+					transform: scale(0.65);
+				}
+			}
+
+			.linkText {
+				padding-bottom: 3px;
+			}
+		}
+	}
+}
+
+.flex {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 5px 20px;
+	padding-top: 10px;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.03);
+	margin-bottom: 5px;
+
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.1);
+		filter: brightness(0.95);
+	}
+
+	.dropdown {
+		width: 30px;
+		height: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 8px;
+		margin-top: -5px;
+
+		background-color: rgba(0, 0, 0, 0.03);
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.1);
+			filter: brightness(0.95);
+		}
+
+		img {
+			width: 13px;
+			height: 13px;
+			transform: rotate(-90deg);
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.showSidebar {
+	right: -350px !important;
+}
+
+.downIndex {
+	z-index: 10000;
+}
+
+.dropIndex {
+	z-index: -10;
+}
+
+@media screen and (max-width: 400px) {
+	.viewRightSidebarWrapper {
+		.viewRightSidebar {
+			width: 80%;
+		}
+	}
+}

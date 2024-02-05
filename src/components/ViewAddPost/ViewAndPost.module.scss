@@ -1,0 +1,126 @@
+.viewAddPost {
+	width: 100%;
+	padding: 15px;
+	border-radius: 32px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	background-color: #fff;
+
+	.topSide {
+		display: flex;
+		align-items: center;
+
+		margin-bottom: 15px;
+
+		.avatar {
+			min-width: 60px;
+			width: 60px;
+			height: 60px;
+			border-radius: 100%;
+			overflow: hidden;
+			margin-right: 10px;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		input {
+			flex: 1 1 auto;
+			min-height: 60px;
+			height: 60px;
+			padding: 0 20px;
+			background: #f8f8fa;
+			border: none;
+			outline: none;
+			border-radius: 25px;
+		}
+	}
+
+	.bottomSide {
+		width: 100%;
+		display: flex;
+
+		.featureItem {
+			width: 25%;
+			display: flex;
+			align-items: center;
+			border-radius: 20px;
+			padding: 10px;
+			cursor: pointer;
+
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.05);
+			}
+
+			.icon {
+				min-width: 32px;
+				width: 32px;
+				height: 32px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: #3456ffbf;
+				border-radius: 100%;
+				margin-right: 5px;
+			}
+
+			.text {
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.viewAddPost {
+		.topSide {
+			.avatar {
+				min-width: 40px;
+				width: 40px;
+				height: 40px;
+			}
+
+			input {
+				max-height: 40px;
+				min-height: 40px;
+			}
+		}
+
+		.bottomSide {
+			.featureItem {
+				.icon {
+					min-width: 28px;
+					max-width: 28px;
+					width: 28px;
+					height: 28px;
+					border-radius: 100%;
+					padding: 12px;
+				}
+
+				.text {
+					font-size: 10px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.viewAddPost {
+		.bottomSide {
+			.featureItem {
+				min-width: 45px;
+				height: 40px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding-left: 16px;
+				.text {
+					font-size: 10px;
+					display: none;
+				}
+			}
+		}
+	}
+}

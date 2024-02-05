@@ -1,0 +1,63 @@
+.viewFollower {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 10px;
+	padding: 5px 15px;
+	margin-bottom: 5px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.05);
+	}
+
+	&:first-child {
+		margin-top: 20px;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.leftSide {
+		display: flex;
+		align-items: center;
+
+		.avatar {
+			min-width: 50px;
+			width: 50px;
+			height: 50px;
+			border-radius: 100%;
+			margin-right: 10px;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.viewUserInfo {
+			.username {
+				margin-bottom: 5px;
+				font-weight: 600;
+				font-size: 16px;
+			}
+
+			.subtitle {
+				font-size: 12px;
+			}
+		}
+	}
+
+	.buttonAdd {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 10px;
+		padding: 5px;
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.15);
+		}
+	}
+}

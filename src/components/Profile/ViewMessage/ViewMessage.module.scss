@@ -1,0 +1,27 @@
+.viewMessage {
+	min-width: 292px;
+	width: 292px;
+	padding: 5px 0px;
+	border-radius: 32px;
+	margin-top: 20px;
+	background-color: #fff;
+
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.05);
+	}
+
+	.viewItem {
+		display: flex;
+		align-items: center;
+		padding: 5px 15px;
+		cursor: pointer;
+
+		.icon {
+			margin-right: 10px;
+		}
+
+		.text {
+			font-weight: 600;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.container {
+	padding: 0 15px;
+}
+
+.viewOther {
+	min-width: 292px;
+	width: 292px;
+	padding: 30px 5px;
+	border-radius: 32px;
+	margin-top: 20px;
+	background-color: #fff;
+
+	.viewHeader {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0px 15px;
+		margin-bottom: 20px;
+	}
+
+	.otherWrapper {
+		display: flex;
+
+		.leftColumn,
+		.rightColumn {
+			width: 50%;
+		}
+	}
+}

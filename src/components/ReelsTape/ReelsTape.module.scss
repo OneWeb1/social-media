@@ -1,0 +1,97 @@
+.viewReelsTape {
+	position: relative;
+	border-radius: 12px;
+	background-color: #fff;
+
+	padding: 8px 0;
+
+	.icon {
+		position: absolute;
+		min-width: 30px;
+		width: 30px;
+		height: 30px;
+		top: 50%;
+		transform: translateY(-50%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #3456ff;
+		border-radius: 100%;
+		margin-left: 10px;
+		cursor: pointer;
+		user-select: none;
+
+		&:last-child {
+			right: 10px;
+		}
+
+		&:first-child img {
+			transform: rotate(90deg);
+		}
+
+		&:last-child img {
+			transform: rotate(-90deg);
+		}
+	}
+
+	.viewReels {
+		width: calc(100vw - (292px * 2 + 32px * 2 + 90px * 2));
+		overflow-x: scroll;
+		display: flex;
+		align-items: center;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+	.viewUser {
+		min-width: 60px;
+		width: 60px;
+		margin-right: 10px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		.avatar {
+			min-width: 60px;
+			max-width: 60px;
+			width: 60px;
+			height: 60px;
+			padding: 4px;
+			background-color: #3456ff80;
+			border-radius: 100%;
+			margin-bottom: 8px;
+			cursor: pointer;
+
+			img {
+				width: 100%;
+				height: 100%;
+				border-radius: 100%;
+			}
+		}
+
+		.username {
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	.viewReels {
+		min-width: calc(100vw - (292px * 2 + 32px * 2 + 13px * 2));
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.viewReels {
+		min-width: calc(100vw - (292px + 29px * 2));
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.viewReels {
+		min-width: calc(100vw - 30px);
+	}
+}

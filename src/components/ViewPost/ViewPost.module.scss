@@ -1,0 +1,284 @@
+.viewPost {
+	margin-top: 30px;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		padding-bottom: 300px;
+	}
+
+	.userInfo {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+		cursor: pointer;
+
+		.leftSide {
+			display: flex;
+			align-items: center;
+
+			.avatar {
+				min-width: 60px;
+				width: 60px;
+				height: 60px;
+				margin-right: 10px;
+				border-radius: 100%;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			.columnInfo {
+				.username {
+					font-weight: 600;
+				}
+				.description {
+					font-size: 15px;
+					margin: 5px 0;
+				}
+				.viewBox {
+					display: flex;
+					align-items: center;
+					font-size: 12px;
+
+					.date {
+						margin-right: 15px;
+					}
+
+					.viewFollow {
+						display: flex;
+						align-items: center;
+						padding: 5px 10px;
+						border-radius: 10px;
+
+						&:hover {
+							background-color: rgba(0, 0, 0, 0.05);
+						}
+
+						img {
+							margin-right: 5px;
+						}
+					}
+				}
+			}
+		}
+
+		.settings {
+			position: relative;
+			width: 35px;
+			height: 35px;
+			min-width: 35px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 10px;
+			cursor: pointer;
+
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.05);
+			}
+
+			&:hover .menu {
+				display: block;
+			}
+
+			.menu {
+				position: absolute;
+				width: 150px;
+				padding: 10px 5px;
+				background-color: #fff;
+				border-radius: 10px;
+				box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+				display: none;
+				top: 35px;
+				right: 0;
+
+				.item {
+					width: 100%;
+					height: 35px;
+					display: flex;
+					align-items: center;
+					padding: 0 15px;
+					border-radius: 10px;
+
+					&:hover {
+						background-color: rgba(0, 0, 0, 0.05);
+					}
+				}
+			}
+
+			img {
+				min-width: 24px;
+				width: 24px;
+				height: 24px;
+			}
+		}
+	}
+
+	.message {
+		font-size: 14px;
+	}
+
+	.text {
+		font-size: 12px;
+		font-weight: 600;
+		margin: 10px 0px;
+		margin-bottom: 5px;
+	}
+
+	.image {
+		border-radius: 12px;
+		background-color: #c4c4c444;
+		overflow: hidden;
+		cursor: pointer;
+
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.functions {
+		display: flex;
+		align-items: center;
+		margin: 10px 0px;
+
+		.functionItem {
+			width: 20%;
+			display: flex;
+			align-items: center;
+			padding: 5px 20px;
+			border-radius: 10px;
+			cursor: pointer;
+
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.05);
+			}
+
+			.icon {
+				margin-right: 8px;
+			}
+
+			.value {
+				font-size: 12px;
+			}
+		}
+	}
+
+	.viewAddComment {
+		display: flex;
+		align-items: center;
+
+		img {
+			width: 45px;
+			height: 45px;
+			border-radius: 100%;
+			margin-right: 10px;
+		}
+
+		.viewInput {
+			flex: 1 1 auto;
+			height: 48px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background: rgba(0, 0, 0, 0.05);
+			padding: 0 25px;
+
+			border-radius: 26px;
+
+			input {
+				flex: 0 1 100%;
+				height: 100%;
+				border: none;
+				outline: none;
+				background: transparent;
+			}
+
+			.rightSide {
+				display: flex;
+				align-items: center;
+
+				.galleryIcon,
+				.sendIcon {
+					width: 35px;
+					height: 35px;
+					padding: 5px;
+					border-radius: 10px;
+					cursor: pointer;
+
+					&:hover {
+						background-color: rgba(0, 0, 0, 0.05);
+					}
+
+					img {
+						width: 100%;
+						height: 100%;
+						cursor: pointer;
+					}
+				}
+
+				.sendIcon {
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.viewPost {
+		.userInfo {
+			.leftSide {
+				.avatar {
+					max-width: 40px;
+					min-width: 40px;
+					width: 40px;
+					height: 40px;
+					margin-top: -10px;
+				}
+			}
+		}
+
+		.columnInfo {
+			.username {
+				font-weight: 600;
+				font-size: 13px;
+				margin-top: 5px;
+			}
+			.description {
+				font-size: 12px !important;
+			}
+			.viewBox {
+				font-size: 10px !important;
+			}
+		}
+		.functions {
+			.functionItem {
+				padding-left: 5px;
+				.value {
+					display: none;
+				}
+			}
+		}
+
+		.viewAddComment {
+			img {
+				max-width: 40px;
+				max-height: 40px;
+			}
+
+			.viewInput {
+				padding: 10px;
+				input {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
