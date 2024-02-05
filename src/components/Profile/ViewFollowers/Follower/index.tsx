@@ -14,7 +14,7 @@ const Follower: FC<FollowerProps> = ({ name, subtitle, avatarId }) => {
 			<div className={styles.leftSide}>
 				<div className={styles.avatar}>
 					<img
-						src={`./public/assets/profile/follow/avatar${avatarId}.png`}
+						src={`./assets/profile/follow/avatar${avatarId}.png`}
 						alt='avatar'
 					/>
 				</div>
@@ -24,7 +24,7 @@ const Follower: FC<FollowerProps> = ({ name, subtitle, avatarId }) => {
 				</div>
 			</div>
 			<div className={styles.buttonAdd}>
-				<img src='./public/assets/profile/plus-circle.png' alt='plus-circle' />
+				<img src='./assets/profile/plus-circle.png' alt='plus-circle' />
 			</div>
 		</div>
 	);

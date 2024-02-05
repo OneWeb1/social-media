@@ -8,7 +8,7 @@ const ViewOther: FC = () => {
 		<div className={styles.viewOther}>
 			<div className={styles.viewHeader}>
 				<div className={styles.logo}>
-					<img src='./public/assets/profile/other-logo.png' alt='logo' />
+					<img src='./assets/profile/other-logo.png' alt='logo' />
 				</div>
 				<div className={styles.text}>LinkedIn Corporation © 2021</div>
 			</div>

@@ -12,7 +12,7 @@ const ViewHeader: FC<ViewHeaderProps> = ({ children, className }) => {
 		<div className={`${styles.viewHeader} ${className}`}>
 			<div className={styles.title}>{children}</div>
 			<div className={styles.icon}>
-				<img src='./public/assets/arrow-down.png' alt='arrow' />
+				<img src='./assets/arrow-down.png' alt='arrow' />
 			</div>
 		</div>
 	);

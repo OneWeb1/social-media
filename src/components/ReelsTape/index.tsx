@@ -29,14 +29,14 @@ const ReelsTape: FC = () => {
 	return (
 		<div className={styles.viewReelsTape}>
 			<div className={styles.icon}>
-				<img src='./public/assets/arrow-down.png' alt='arrow' />
+				<img src='./assets/arrow-down.png' alt='arrow' />
 			</div>
 			<div className={styles.viewReels}>
 				{reelsUsers.map(user => (
 					<div className={styles.viewUser}>
 						<div className={styles.avatar}>
 							<img
-								src={`./public/assets/tape/reels/avatar${user.avatarId}.png`}
+								src={`./assets/tape/reels/avatar${user.avatarId}.png`}
 								alt='avatar'
 							/>
 						</div>
@@ -45,7 +45,7 @@ const ReelsTape: FC = () => {
 				))}
 			</div>
 			<div className={styles.icon}>
-				<img src='./public/assets/arrow-down.png' alt='arrow' />
+				<img src='./assets/arrow-down.png' alt='arrow' />
 			</div>
 		</div>
 	);

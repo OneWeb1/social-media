@@ -23,7 +23,7 @@ const ViewPost: FC<ViewPostProps> = ({ post }) => {
 				<div className={styles.leftSide}>
 					<div className={styles.avatar}>
 						<img
-							src={`./public/assets/tape/avatars/avatar${post.avatarId}.png`}
+							src={`./assets/tape/avatars/avatar${post.avatarId}.png`}
 							alt='avatar'
 						/>
 					</div>
@@ -34,10 +34,7 @@ const ViewPost: FC<ViewPostProps> = ({ post }) => {
 							<div className={styles.date}>{post.date}</div>
 							{!post.isFollow && (
 								<div className={styles.viewFollow}>
-									<img
-										src='./public/assets/tape/plus-circle.png'
-										alt='plus-circle'
-									/>
+									<img src='./assets/tape/plus-circle.png' alt='plus-circle' />
 									<span className={styles.follow}>Follow</span>
 								</div>
 							)}
@@ -45,7 +42,7 @@ const ViewPost: FC<ViewPostProps> = ({ post }) => {
 					</div>
 				</div>
 				<div className={styles.settings}>
-					<img src='./public/assets/tape/settings.png' alt='settings' />
+					<img src='./assets/tape/settings.png' alt='settings' />
 
 					<div className={styles.menu}>
 						<div className={styles.item}>Duplicate</div>
@@ -60,60 +57,57 @@ const ViewPost: FC<ViewPostProps> = ({ post }) => {
 			<div className={styles.text}>See translate</div>
 			<div className={styles.image}>
 				<img
-					src={`./public/assets/tape/post-assets/image${post.imageId}.png`}
+					src={`./assets/tape/post-assets/image${post.imageId}.png`}
 					alt='image'
 				/>
 			</div>
 			<div className={styles.functions}>
 				<div className={styles.functionItem}>
 					<div className={styles.icon}>
-						<img src='./public/assets/tape/functions/like.png' alt='like' />
+						<img src='./assets/tape/functions/like.png' alt='like' />
 					</div>
 					{/* <div className={styles.value}>Like</div> */}
 					<div className={styles.count}>0</div>
 				</div>
 				<div className={styles.functionItem}>
 					<div className={styles.icon}>
-						<img
-							src='./public/assets/tape/functions/comment.png'
-							alt='comment'
-						/>
+						<img src='./assets/tape/functions/comment.png' alt='comment' />
 					</div>
 					{/* <div className={styles.value}>Comments</div> */}
 					<div className={styles.count}>0</div>
 				</div>
 				<div className={styles.functionItem}>
 					<div className={styles.icon}>
-						<img src='./public/assets/tape/functions/save.png' alt='save' />
+						<img src='./assets/tape/functions/save.png' alt='save' />
 					</div>
 					{/* <div className={styles.value}>Saved</div> */}
 					<div className={styles.count}>0</div>
 				</div>
 				<div className={styles.functionItem}>
 					<div className={styles.icon}>
-						<img src='./public/assets/tape/functions/send.png' alt='send' />
+						<img src='./assets/tape/functions/send.png' alt='send' />
 					</div>
 					{/* <div className={styles.value}>Send</div> */}
 					<div className={styles.count}>0</div>
 				</div>
 				<div className={styles.functionItem}>
 					<div className={styles.icon}>
-						<img src='./public/assets/tape/functions/share.png' alt='share' />
+						<img src='./assets/tape/functions/share.png' alt='share' />
 					</div>
 					{/* <div className={styles.value}>Share</div> */}
 					<div className={styles.count}>0</div>
 				</div>
 			</div>
 			<div className={styles.viewAddComment}>
-				<img src='./public/assets/avatar.png' alt='avatar' />
+				<img src='./assets/avatar.png' alt='avatar' />
 				<div className={styles.viewInput}>
 					<input type='text' placeholder='Add comment...' />
 					<div className={styles.rightSide}>
 						<div className={styles.galleryIcon}>
-							<img src='./public/assets/tape/gallery.png' alt='gallery' />
+							<img src='./assets/tape/gallery.png' alt='gallery' />
 						</div>
 						<div className={styles.sendIcon}>
-							<img src='./public/assets/tape/functions/send.png' alt='send' />
+							<img src='./assets/tape/functions/send.png' alt='send' />
 						</div>
 					</div>
 				</div>

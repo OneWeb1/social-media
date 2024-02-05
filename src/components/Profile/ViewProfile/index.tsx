@@ -38,13 +38,13 @@ const ViewProfile: FC<ViewProfileProps> = ({ style }) => {
 				<div className={styles.bottomRow}>
 					<div className={styles.leftItem}>
 						<div className={styles.icon}>
-							<img src='./public/assets/profile/save.png' alt='save' />
+							<img src='./assets/profile/save.png' alt='save' />
 						</div>
 						<div className={styles.value}>Saved</div>
 					</div>
 					<div className={styles.rightItem}>
 						<div className={styles.icon}>
-							<img src='./public/assets/profile/premium.png' alt='premium' />
+							<img src='./assets/profile/premium.png' alt='premium' />
 						</div>
 						<div className={styles.value}>Premium</div>
 					</div>

@@ -46,7 +46,7 @@ const Header: FC<HeaderProps> = ({ setIsIndex, setIsOpenSidebar }) => {
 				{window.innerWidth >= 1000 && (
 					<Link to='/'>
 						<div className={styles.logo}>
-							<img src='./public/assets/logo.png' alt='logo' />
+							<img src='./assets/logo.png' alt='logo' />
 						</div>
 					</Link>
 				)}
@@ -60,7 +60,7 @@ const Header: FC<HeaderProps> = ({ setIsIndex, setIsOpenSidebar }) => {
 									height: '60px',
 									marginTop: '-7px',
 								}}
-								src='./public/assets/mobile-logo.png'
+								src='./assets/mobile-logo.png'
 								alt='logo'
 							/>
 						</div>
@@ -69,7 +69,7 @@ const Header: FC<HeaderProps> = ({ setIsIndex, setIsOpenSidebar }) => {
 
 				<div className={styles.searchWrapper}>
 					<div className={styles.icon}>
-						<img src='./public/assets/search.png' alt='search' />
+						<img src='./assets/search.png' alt='search' />
 					</div>
 					<input type='text' placeholder='Search...' />
 				</div>
@@ -78,40 +78,28 @@ const Header: FC<HeaderProps> = ({ setIsIndex, setIsOpenSidebar }) => {
 				<div className={styles.leftSide}>
 					<Link to='/'>
 						<div className={styles.navBox}>
-							<img
-								src='./public/assets/header-nav-icons/home.png'
-								alt='nav-icon'
-							/>
+							<img src='./assets/header-nav-icons/home.png' alt='nav-icon' />
 						</div>
 					</Link>
 					<Link to='/people'>
 						<div className={styles.navBox}>
-							<img
-								src='./public/assets/header-nav-icons/people.png'
-								alt='nav-icon'
-							/>
+							<img src='./assets/header-nav-icons/people.png' alt='nav-icon' />
 						</div>
 					</Link>
 					<Link to='/shop'>
 						<div className={styles.navBox}>
-							<img
-								src='./public/assets/header-nav-icons/shop.png'
-								alt='nav-icon'
-							/>
+							<img src='./assets/header-nav-icons/shop.png' alt='nav-icon' />
 						</div>
 					</Link>
 					<Link to='/chat'>
 						<div className={styles.navBox}>
-							<img
-								src='./public/assets/header-nav-icons/chat.png'
-								alt='nav-icon'
-							/>
+							<img src='./assets/header-nav-icons/chat.png' alt='nav-icon' />
 						</div>
 					</Link>
 					<Link to='/notification'>
 						<div className={styles.navBox}>
 							<img
-								src='./public/assets/header-nav-icons/notification.png'
+								src='./assets/header-nav-icons/notification.png'
 								alt='nav-icon'
 							/>
 						</div>
@@ -120,12 +108,12 @@ const Header: FC<HeaderProps> = ({ setIsIndex, setIsOpenSidebar }) => {
 				<div className={styles.profileWrapper}>
 					<div className={styles.leftSide}>
 						<div className={styles.avatar}>
-							<img src='./public/assets/avatar.png' alt='avatar' />
+							<img src='./assets/avatar.png' alt='avatar' />
 						</div>
 						<div className={styles.userName}>Vladyslav Kovalevich</div>
 					</div>
 					<div className={styles.dropDown}>
-						<img src='./public/assets/arrow-down.png' alt='arrow' />
+						<img src='./assets/arrow-down.png' alt='arrow' />
 					</div>
 
 					<div className={styles.menu}>

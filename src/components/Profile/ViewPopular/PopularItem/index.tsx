@@ -19,7 +19,7 @@ const PopularItem: FC<PopularItemProps> = ({ title, description, count }) => {
 			<div className={styles.viewEye}>
 				<div>
 					<div className={styles.icon}>
-						<img src='./public/assets/profile/eye.png' alt='eye' />
+						<img src='./assets/profile/eye.png' alt='eye' />
 					</div>
 					<div className={styles.count}>{count}+</div>
 				</div>

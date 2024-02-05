@@ -9,22 +9,22 @@ const ViewInfoList: FC = () => {
 			<div className={styles.viewRow}>
 				<ViewHeader>Groups</ViewHeader>
 				<div className={styles.rowItem}>
-					<img src='./public/assets/profile/group-people.png' alt='group' />
+					<img src='./assets/profile/group-people.png' alt='group' />
 					<div className={styles.rowText}>UI/UX Design</div>
 				</div>
 				<div className={styles.rowItem}>
-					<img src='./public/assets/profile/group-people.png' alt='group' />
+					<img src='./assets/profile/group-people.png' alt='group' />
 					<div className={styles.rowText}>UI Design</div>
 				</div>
 				<div className={styles.rowItem}>
-					<img src='./public/assets/profile/group-people.png' alt='group' />
+					<img src='./assets/profile/group-people.png' alt='group' />
 					<div className={styles.rowText}>UI Design</div>
 				</div>
 			</div>
 			<div className={styles.viewRow}>
 				<ViewHeader>Event</ViewHeader>
 				<div className={styles.rowItem}>
-					<img src='./public/assets/profile/calendar.png' alt='group' />
+					<img src='./assets/profile/calendar.png' alt='group' />
 					<div className={styles.rowText}>Webinar UI Design at 09:00 am.</div>
 				</div>
 			</div>

@@ -62,7 +62,7 @@ const RightSidebar: FC<RightSidebarProps> = ({
 									minWidth: '30px',
 									height: '30px',
 								}}
-								src='./public/assets/logo.png'
+								src='./assets/logo.png'
 								alt='logo'
 							/>
 						</div>
@@ -72,10 +72,7 @@ const RightSidebar: FC<RightSidebarProps> = ({
 					<Link to='/'>
 						<div className={styles.flex}>
 							<div className={styles.navBox}>
-								<img
-									src='./public/assets/header-nav-icons/home.png'
-									alt='nav-icon'
-								/>
+								<img src='./assets/header-nav-icons/home.png' alt='nav-icon' />
 							</div>
 							<div className={styles.linkText}>Home</div>
 						</div>
@@ -84,7 +81,7 @@ const RightSidebar: FC<RightSidebarProps> = ({
 						<div className={styles.flex}>
 							<div className={styles.navBox}>
 								<img
-									src='./public/assets/header-nav-icons/people.png'
+									src='./assets/header-nav-icons/people.png'
 									alt='nav-icon'
 								/>
 							</div>
@@ -94,10 +91,7 @@ const RightSidebar: FC<RightSidebarProps> = ({
 					<Link to='/shop'>
 						<div className={styles.flex}>
 							<div className={styles.navBox}>
-								<img
-									src='./public/assets/header-nav-icons/shop.png'
-									alt='nav-icon'
-								/>
+								<img src='./assets/header-nav-icons/shop.png' alt='nav-icon' />
 							</div>
 							<div className={styles.linkText}>Shop</div>
 						</div>
@@ -105,10 +99,7 @@ const RightSidebar: FC<RightSidebarProps> = ({
 					<Link to='/chat'>
 						<div className={styles.flex}>
 							<div className={styles.navBox}>
-								<img
-									src='./public/assets/header-nav-icons/chat.png'
-									alt='nav-icon'
-								/>
+								<img src='./assets/header-nav-icons/chat.png' alt='nav-icon' />
 							</div>
 							<div className={styles.linkText}>Chat</div>
 						</div>
@@ -117,7 +108,7 @@ const RightSidebar: FC<RightSidebarProps> = ({
 						<div className={styles.flex}>
 							<div className={styles.navBox}>
 								<img
-									src='./public/assets/header-nav-icons/notification.png'
+									src='./assets/header-nav-icons/notification.png'
 									alt='nav-icon'
 								/>
 							</div>
@@ -131,7 +122,7 @@ const RightSidebar: FC<RightSidebarProps> = ({
 							<div style={{ display: 'flex', alignItems: 'center' }}>
 								<div className={styles.navBox}>
 									<img
-										src='./public/assets/header-nav-icons/profile.png'
+										src='./assets/header-nav-icons/profile.png'
 										alt='nav-icon'
 									/>
 								</div>
@@ -140,7 +131,7 @@ const RightSidebar: FC<RightSidebarProps> = ({
 						</Link>
 
 						<div className={styles.dropdown}>
-							<img src='./public/assets/dropdown.png' alt='nav-icon' />
+							<img src='./assets/dropdown.png' alt='nav-icon' />
 						</div>
 					</div>
 				</div>

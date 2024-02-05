@@ -10,7 +10,7 @@ const OtherItem: FC<OtherItemProps> = ({ value }) => {
 	return (
 		<div className={styles.viewItem}>
 			<div className={styles.icon}>
-				<img src='./public/assets/profile/other.png' alt='other' />
+				<img src='./assets/profile/other.png' alt='other' />
 			</div>
 			<div className={styles.text}>{value}</div>
 		</div>

@@ -7,7 +7,7 @@ const ViewMessage: FC = () => {
 		<div className={styles.viewMessage}>
 			<div className={styles.viewItem}>
 				<div className={styles.icon}>
-					<img src='./public/assets/profile/message.png' alt='message' />
+					<img src='./assets/profile/message.png' alt='message' />
 				</div>
 				<div className={styles.text}>Message</div>
 			</div>
