@@ -3,7 +3,7 @@ import { CSSProperties, FC } from 'react';
 import styles from './ViewProfile.module.scss';
 
 interface ViewProfileProps {
-	style: CSSProperties;
+	style?: CSSProperties;
 }
 
 const ViewProfile: FC<ViewProfileProps> = ({ style }) => {

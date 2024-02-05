@@ -12,7 +12,7 @@ interface HeaderProps {
 }
 
 const Header: FC<HeaderProps> = ({ setIsIndex, setIsOpenSidebar }) => {
-	const [top, setTop] = useState<string>('0px');
+	const [top] = useState<string>('0px');
 	const [update, setUpdate] = useState<number>(1);
 
 	const showSidebar = () => {
